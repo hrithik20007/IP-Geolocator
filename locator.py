@@ -3,12 +3,13 @@ import argparse
 import json
 import sys
 
+#ArgumentParser object or the parser will store the information passed from the command line
 a=argparse.ArgumentParser()
 # Add the arguements for terminal use
 a.add_argument("--ipaddress", "-i", help="Provide IP or Domain")
 #parse_args() interprests the CLI commands as arguements provided in object a
 b=a.parse_args()
-#ipaddress acts an object of b, which was provided as an arguement
+#ipaddress acts as an object of b, which was provided as an arguement
 ip=b.ipaddress
 
 if(ip==None):
